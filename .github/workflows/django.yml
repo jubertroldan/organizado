@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+# on:
+#   schedule:
+#   - cron:'*/15 * * * *'
+
 jobs:
   build:
 
@@ -28,4 +32,4 @@ jobs:
     - name: Run Tests
       run: |
         cd mysite
-        python manage.py test
+        python manage.py runserver
