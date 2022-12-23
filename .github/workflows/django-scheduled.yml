@@ -8,7 +8,7 @@ name: Django CI Cron Scheduled
 
 on:
   schedule:
-    - cron:'*/15 * * * *'
+    - cron: '0 0 * * 1' # At 00:00 on Monday
 
 jobs:
   build:
