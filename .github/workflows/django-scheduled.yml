@@ -9,6 +9,7 @@ name: Django CI Cron Scheduled
 on:
   schedule:
     - cron: '*/5 * * * *' # At 00:00 on Monday '0 0 * * 1'
+  workflow_dispatch:
 
 jobs:
   build:
